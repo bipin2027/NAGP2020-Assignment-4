@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PrecautionsComponent } from './precautions/precautions.component';
 import { RouteGuardService } from './core/services/route-guard.service';
+import { ErrorComponent } from './error/error.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,9 @@ const routes: Routes = [
   {path:"post", component:PostsComponent, canActivate:[RouteGuardService]},
   {path:"login", component:LoginComponent},
   {path:"logout", component:LogoutComponent, canActivate:[RouteGuardService]},
-  {path:"precautions", component:PrecautionsComponent}
+  {path:"precautions", component:PrecautionsComponent},
+
+  {path:"**", component:ErrorComponent}
 ];
 
 @NgModule({

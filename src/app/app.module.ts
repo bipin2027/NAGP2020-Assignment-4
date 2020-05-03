@@ -17,6 +17,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { PrecautionsComponent } from './precautions/precautions.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     PostsComponent,
     LoginComponent,
     LogoutComponent,
-    PrecautionsComponent
+    PrecautionsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
