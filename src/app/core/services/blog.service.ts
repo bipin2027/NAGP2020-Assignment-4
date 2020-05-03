@@ -15,8 +15,6 @@ export class BlogService {
   constructor(private http: HttpClient) { }
 
   savePosts(post: Post) {
-    //this.posts.push(post);
-    //console.log(this.posts.length);
     var postSaved: boolean = false;
     this.http.post(this.jsonDbUrl, post).subscribe(data => {
       console.log('POST Request is successful ', data);
