@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgForm } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { AdminComponent } from './admin.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AdminComponent', () => {
   let component: AdminComponent;
@@ -8,9 +10,13 @@ describe('AdminComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminComponent ]
+      imports: [
+        HttpClientTestingModule,
+        RouterTestingModule.withRoutes([]),
+      ],
+      declarations: [AdminComponent, NgForm]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -9,7 +9,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class BlogService {
   private posts: Post[] = [];
-  private jsonDbUrl: string = "http://localhost:3000/posts";
+
+  //private jsonDbUrl: string = "http://localhost:3000/posts";
+  private jsonDbUrl: string = "https://bipin-covid19db.herokuapp.com/posts";
 
 
   constructor(private http: HttpClient) { }

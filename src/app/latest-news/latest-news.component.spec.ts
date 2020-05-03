@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgForm } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { LatestNewsComponent } from './latest-news.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('LatestNewsComponent', () => {
   let component: LatestNewsComponent;
@@ -8,9 +10,14 @@ describe('LatestNewsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LatestNewsComponent ]
+      imports: [
+        HttpClientTestingModule,
+        RouterTestingModule.withRoutes([]),
+      ],
+      declarations: [LatestNewsComponent,
+        NgForm]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
