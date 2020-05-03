@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="col-md-12 blogShort" *ngFor="let news of latestNews">
+    <h1>{{news.title}}</h1>
+    <br>
+    <span>{{news.description}}</span>
+    <br><br>
+    <article [innerHtml]="news.content">
+    </article>
+  </div>
+</div>

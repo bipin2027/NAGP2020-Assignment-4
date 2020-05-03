@@ -1,0 +1,15 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li><a class="navbar-brand" href="#">COVID19</a></li>
+      <li><a routerLink="/dashboard" class="nav-link">Dashboard</a></li>
+      <li><a routerLink="/latestNews" class="nav-link">Latest News</a></li>
+      <li><a routerLink="/precautions" class="nav-link">Precautions</a></li>
+    </ul>
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li><a *ngIf="!authenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link">Admin</a></li>
+      <li><span *ngIf="authenticationService.isUserLoggedIn()" routerLink="/adminDashboard" class="nav-link"><i class="fa fa-tachometer" aria-hidden="true"></i></span></li>
+      <li><a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+    </ul>
+  </nav>
+</header>

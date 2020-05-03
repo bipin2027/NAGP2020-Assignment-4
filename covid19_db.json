@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "title": "Post COVID-19",
+      "description": "The Most Adaptable Will Survive",
+      "content": "<p>COVID-19 has radically transformed lives. India’s decision to impose a three week lockdown across the country to protect its citizens is unprecedented in scale. Prevention and containment strategies pursued by China, South Korea, Taiwan and Singapore have revolved around border controls and barring entry of visitors to break the chain of transmission. European countries like Spain and Italy procrastinated, paid a huge price and had to subsequently announce national lockdowns. US with partial lockdown continues to have a steeply rising curve with major fatalities. Given the high transmission nature of the virus and absence of vaccines early causalities will be aviation, travel and tourism. This pandemic will redefine the way we live and exist. It will create new norms.</p>",
+      "createdDate": "05-03-2020 11:56",
+      "id": 1
+    }
+  ]
+}

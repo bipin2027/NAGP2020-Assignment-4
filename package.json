@@ -7,10 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "json-server": "json-server --watch covid19_db.json"
   },
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@angular/animations": "~7.0.0",
     "@angular/common": "~7.0.0",
     "@angular/compiler": "~7.0.0",
@@ -20,8 +22,14 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "@ckeditor/ckeditor5-angular": "^1.2.3",
+    "@ckeditor/ckeditor5-build-classic": "^18.0.0",
+    "angular-font-awesome": "^3.1.2",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
+    "json-server": "^0.16.1",
     "rxjs": "~6.3.3",
+    "save-dev": "0.0.1-security",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

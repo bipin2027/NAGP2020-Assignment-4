@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Total Cases </th>
+        <th>Active</th>
+        <th>Recovered</th>
+        <th>Deceased</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stateData of states | slice:1">
+        <td><button (click)=showDistrict(stateData.state) class="btn btn-success">{{stateData.state}}</button></td>
+        <td>{{stateData.confirmed}}</td>
+        <td>{{stateData.active}}</td>
+        <td>{{stateData.recovered}}</td>
+        <td>{{stateData.deaths}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

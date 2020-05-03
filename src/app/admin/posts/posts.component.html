@@ -1,0 +1,27 @@
+
+<br>
+<br>
+<div>
+    <h1>{{formTitle}} Post</h1>
+    <hr />
+    <form #myForm="ngForm" (ngSubmit)="saveBlogPost()" accept-charset="UTF-8" novalidate>
+        <input type="text" [formControl]="postTitle"  class="blogHeader" placeholder="Add title..." class="form-control" name="postTitle" required />
+        <span class="text-danger" *ngIf="myForm.submitted && postTitle.errors?.required">
+            Title is required
+        </span>
+        <br />
+        <input type="text" [formControl]="postDescription" class="blogHeader" placeholder="Add Description..." class="form-control" name="postDescription"  required />
+        <span class="text-danger" *ngIf="myForm.submitted && postDescription.errors?.required">
+            Description is required
+        </span>
+        <br/>
+        <div class="form-group">
+            <ckeditor name="myckeditor" [formControl]="postContent" [config]="ckeConfig" debounce="600" [editor]="Editor" ></ckeditor>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger"(click)="cancel()" >CANCEL</button>
+        </div>
+    </form>
+
+</div>
