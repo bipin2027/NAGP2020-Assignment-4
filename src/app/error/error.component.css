@@ -223,24 +223,6 @@
 	 left: 80%;
 	 top: 230%;
 }
- @-webkit-keyframes moves {
-	 0% {
-		 left: 0;
-		 top: 0;
-	}
-	 100% {
-		 left: 100%;
-		 top: 70%;
-	}
-}
- @-webkit-keyframes twinkle {
-	 0% {
-		 -webkit-filter: brightness(100%);
-	}
-	 100% {
-		 -webkit-filter: brightness(150%);
-	}
-}
  @keyframes sky {
 	 0% {
 		 background-position: 0 50%;
